@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Manav Automation</title>
+
+<p class="portfolio-text">PORTFOLIO</p>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    background:#0f172a;
+    color:white;
+    line-height:1.6;
+}
+
+header{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:20px;
+    position:relative;
+    background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+    font-size:60px;
+    color:#00e5ff;
+    margin-bottom:10px;
+}
+
+header p{
+    max-width:700px;
+    color:#cbd5e1;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    margin-top:20px;
+    padding:15px 30px;
+    background:#00e5ff;
+    color:black;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+.no-btn{
+    position:absolute;
+    top:70%;
+    left:50%;
+    transform:translateX(-50%);
+    padding:15px 30px;
+    background:#ef4444;
+    color:white;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:20px;
+}
+
+.card{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+}
+
+.project{
+    background:#1e293b;
+    padding:25px;
+    border-radius:15px;
+    margin-bottom:20px;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact a{
+    color:#00e5ff;
+    text-decoration:none;
+}
+
+footer{
+    background:#020617;
+    text-align:center;
+    padding:25px;
+}
+
+.whatsapp{
+    position:fixed;
+    right:20px;
+    bottom:20px;
+    background:#25D366;
+    color:white;
+    padding:15px 20px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>🚀 Manav Automation</h1>
+
+    <p>
+        Websites • AI Chatbots • Business Automation
+    </p>
+
+    <a href="https://wa.me/919024986850" target="_blank" class="btn">
+        Hire Me
+    </a>
+
+    <a href="#" id="noBtn" class="no-btn">
+        ❌ Not Hire Me
+    </a>
+</header>
+
+<section>
+    <h2>About Me</h2>
+
+    <p style="text-align:center;max-width:700px;margin:auto;">
+        I help businesses build websites, AI chatbots and automation systems.
+    </p>
+</section>
+
+<section>
+
+<h2>Services</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🌐 Website Development</h3>
+
+<p>
+Professional business websites, portfolio websites,
+landing pages, e-commerce stores and custom web
+applications designed to attract customers and grow your business.
+</p>
+
+<br>
+
+<ul>
+<li>✔ Mobile Responsive Design</li>
+<li>✔ Fast Loading Speed</li>
+<li>✔ Modern UI/UX</li>
+<li>✔ SEO Friendly Structure</li>
+<li>✔ Custom Design</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>🤖 AI Chatbots</h3>
+
+<p>
+Custom AI chatbots for customer support, lead generation,
+appointment booking, FAQs and business automation that
+can work 24/7 for your business.
+</p>
+
+<br>
+
+<ul>
+<li>✔ Customer Support Bot</li>
+<li>✔ Lead Generation Bot</li>
+<li>✔ FAQ Assistant</li>
+<li>✔ WhatsApp Chatbot</li>
+<li>✔ AI Powered Responses</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h3>⚙️ Business Automation</h3>
+
+<p>
+Automate repetitive business tasks using modern tools
+and workflows to save time, reduce manual work and
+increase productivity.
+</p>
+
+<br>
+
+<ul>
+<li>✔ WhatsApp Automation</li>
+<li>✔ Email Automation</li>
+<li>✔ CRM Integration</li>
+<li>✔ Lead Management</li>
+<li>✔ Workflow Automation</li>
+</ul>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="contact">
+
+    <h2>Contact Me</h2>
+
+    <p>
+        📧
+        <a href="mailto:manavautomation9@gmail.com">
+            manavautomation9@gmail.com
+        </a>
+
+        <br><br>
+
+        📞
+        <a href="tel:+919024986850">
+            +91 90249 86850
+        </a>
+
+        <br><br>
+
+        💬
+        <a href="https://wa.me/919024986850">
+            WhatsApp
+        </a>
+    </p>
+
+</section>
+
+<footer>
+    © 2026 Manav Automation
+</footer>
+
+<a class="whatsapp" href="https://wa.me/919024986850">
+    💬 WhatsApp
+</a>
+
+<script>
+const btn = document.getElementById("noBtn");
+
+btn.addEventListener("mouseenter", () => {const x = Math.random() * (window.innerWidth - 200);
+    const y = Math.random() * (window.innerHeight - 100);
+
+    btn.style.left = x + "px";
+    btn.style.top = y + "px";
+});
+</script>
+
+</body>
+</html>
